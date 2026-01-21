@@ -1,6 +1,42 @@
 
 .background {
-    background-color: #fff;
-    width: 500px;
+    background-color: #fcfbf7;
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(240, 240, 240, 0.5),
+        rgba(240, 240, 240, 0.5) 1px,
+        transparent 1px,
+        transparent 5px);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.10);
+    max-width: full;
+    width: 30%;
     height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipeBox {
+    padding-top: 70px;
+}
+
+.recipeText {
+    background-color: yellow;
+    display: inline-block;
+}
+
+.menuBox {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menuelementBox {
+    border-bottom: red 1px solid;
 }
