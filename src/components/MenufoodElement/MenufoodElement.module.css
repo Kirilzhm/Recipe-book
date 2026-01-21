@@ -22,12 +22,21 @@
 }
 
 .recipeBox {
-    padding-top: 70px;
+    margin-top: 70px;
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    /* border-radius: 32% 68% 32% 68% / 100% 0% 100% 0%; */
+    border-radius: 100px 20px 100px 20px / 20px 100px 20px 100px;
+    transform: rotate(-1.5deg);
 }
 
 .recipeText {
-    background-color: yellow;
     display: inline-block;
+    font-family: "Caveat", sans-serif;
+    font-weight: 700;
+    font-size: xxx-large;
 }
 
 .menuBox {
@@ -39,4 +48,10 @@
 
 .menuelementBox {
     border-bottom: red 1px solid;
+}
+
+.menuText {
+    font-family: "Caveat", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
 }
