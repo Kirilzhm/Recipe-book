@@ -1,6 +1,8 @@
 import styles from "./MenufoodElement.module.css"
 import menuCross from "/icons/menuCross.svg"
 
+import { Link } from "react-router-dom";
+
 const Menu =({onClose}) => {
     return (
         <div className={styles.background}>
@@ -10,19 +12,19 @@ const Menu =({onClose}) => {
                 </div>      
                 <div className={styles.menuBox}>
                     <div className={styles.menuelementBox}>
-                        <p className={styles.menuText}>Салати</p>
+                        <Link to="/MenuItemsPage" className={styles.menuText}>Салати</Link>
                     </div>
                     <div className={styles.menuelementBox}>
-                        <p className={styles.menuText}>Торти</p>
+                        <Link to="/MenuItemsPage" className={styles.menuText}>Торти</Link>
                     </div>
                     <div className={styles.menuelementBox}>
-                        <p className={styles.menuText}>Солодощі</p>
+                        <Link to="/MenuItemsPage" className={styles.menuText}>Солодощі</Link>
                     </div>
                     <div className={styles.menuelementBox}>
-                        <p className={styles.menuText}>Картопля</p>
+                        <Link to="/MenuItemsPage" className={styles.menuText}>Картопля</Link>
                     </div>
                     <div className={styles.menuelementBox}>
-                        <p className={styles.menuText}>Курка</p>
+                        <Link to="/MenuItemsPage" className={styles.menuText}>Курка</Link>
                     </div>
                 </div>
             </div>
