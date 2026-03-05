@@ -1,6 +1,7 @@
 
 .background {
-    background-color: #fcfbf7;
+    /* background-color: #fcfbf7; */
+    background-color: #e6e1ce;
     background-image: repeating-linear-gradient(
         45deg,
         rgba(240, 240, 240, 0.5),
@@ -14,6 +15,7 @@
     height: 800px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .box {
@@ -22,12 +24,21 @@
 }
 
 .recipeBox {
-    padding-top: 70px;
+    margin-top: 70px;
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    /* border-radius: 32% 68% 32% 68% / 100% 0% 100% 0%; */
+    border-radius: 100px 20px 100px 20px / 20px 100px 20px 100px;
+    transform: rotate(-1.5deg);
 }
 
 .recipeText {
-    background-color: yellow;
     display: inline-block;
+    font-family: "Caveat", sans-serif;
+    font-weight: 700;
+    font-size: xxx-large;
 }
 
 .menuBox {
@@ -35,8 +46,25 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    /* width: 300px; */
 }
 
 .menuelementBox {
     border-bottom: red 1px solid;
+}
+
+.menuText {
+    font-family: "Caveat", sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 70px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
 }
